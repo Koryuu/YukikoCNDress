@@ -7,36 +7,43 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #7B0D0D 0%, #C0392B 60%, #D4A017 100%);
+  background:
+    linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
+    url('ENDFIELD.png') center center / cover fixed;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* ── Layout ───────────────────────────────────────────────── */
 .container {
   max-width: 1800px;
   margin: 0 auto;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
   overflow: hidden;
   display: flex;
-  min-height: 90vh;
+  min-height: calc(100vh - 20px);
 }
 
 .specs-side {
   flex: 0 0 44%;
   padding: 36px 40px;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: calc(100vh - 20px);
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .images-side {
   flex: 1;
   padding: 36px 32px;
-  background: #f8f9fa;
+  background: rgba(240,244,248,0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: calc(100vh - 20px);
   position: relative;
 }
 
@@ -54,18 +61,20 @@ h1 {
   color: #C0392B;
   margin-bottom: 8px;
   font-size: 1.9em;
+  text-shadow: 0 1px 4px rgba(255,255,255,0.8), 0 0 12px rgba(255,255,255,0.6);
 }
 
 .subtitle {
-  color: #666;
+  color: #444;
   margin-bottom: 26px;
   font-size: 0.95em;
   line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.7);
 }
 
 /* ── TL;DR box ────────────────────────────────────────────── */
 .tldr-box {
-  background: #f0f7ff;
+  background: rgba(220,238,255,0.82);
   border-left: 4px solid #3d8ed4;
   padding: 12px 14px;
   margin-bottom: 14px;
@@ -87,19 +96,20 @@ h1 {
 .section {
   padding: 16px 20px;
   border-radius: 10px;
+  background: rgba(255,255,255,0.62);
   transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.25s, transform 0.15s;
   cursor: pointer;
   border: 2px solid transparent;
 }
 
 .section:hover {
-  background: #fff5f5;
+  background: rgba(255,245,245,0.78);
   border-color: #C0392B;
   transform: translateX(4px);
 }
 
 .section.highlighted {
-  background: #fff0ee;
+  background: rgba(255,240,238,0.82);
   border-color: #C0392B;
   box-shadow: 0 4px 12px rgba(192,57,43,0.2);
 }
@@ -129,7 +139,7 @@ h1 {
 
 /* ── Option + Warning boxes ───────────────────────────────── */
 .options {
-  background: #fffbf0;
+  background: rgba(255,251,220,0.82);
   padding: 13px 16px;
   border-radius: 8px;
   margin: 10px 0;
@@ -137,7 +147,7 @@ h1 {
 }
 
 .warning-box {
-  background: #fff3cd;
+  background: rgba(255,243,180,0.82);
   border-left: 4px solid #ffc107;
   padding: 12px 14px;
   margin: 10px 0;
@@ -184,10 +194,10 @@ h1 {
 
 /* ── Image cards ──────────────────────────────────────────── */
 .image-card {
-  background: white;
+  background: rgba(255,255,255,0.72);
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, opacity 0.2s;
   cursor: zoom-in;
   position: relative;

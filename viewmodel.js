@@ -21,14 +21,14 @@
 
 const ViewModel = {
 
-  title:    "Yukiko Qipao",
-  subtitle: "China Expansion",
+  title:    "Yukiko Chinese Outfit",
+  subtitle: "If something doesn't make sense, let me know",
 
   images: [
 
     // ── ZZZ refs ──
     { num: 1,  id: "zzz_silhouette",  src: "img/ye-shunguang-tamano-v0-mjzsrcjrzzgg1.jpeg",  label: "ZZZ — Primary Silhouette + Keyhole Ref" },
-    { num: 2,  id: "zzz_chest",       src: "img/zzz_chest_detail.png",                        label: "ZZZ — Chest Panel Framing" },
+    { num: 2,  id: "zzz_chest",       src: "img/zzz_chest_detail.png",                        label: "ZZZ — Chest Panel Framing Closeup" },
 
     // ── Silhouette ──
     { num: 3,  id: "column_back",     src: "img/115767518_p0_master1200.jpg",                 label: "Column Silhouette — Back View" },
@@ -138,7 +138,7 @@ const ViewModel = {
               <p style="color:#e0c97f; font-weight:700; margin-bottom:8px; font-size:0.9em;">🎀 COLLAR & TRIM</p>
               <ul style="color:#d0dde8; font-size:0.88em; line-height:1.9; margin-left:14px;">
                 <li>High mandarin collar — stiff and standing</li>
-                <li>3–5 Chinese frog knot closures below collar to keyhole</li>
+                <li>2-4 Chinese frog knot closures below collar to keyhole</li>
                 <li>Top collar detail: Chinese knot or cord — not a Western bow</li>
                 <li>1–2 tassels hanging at hip</li>
               </ul>
@@ -149,7 +149,7 @@ const ViewModel = {
               <ul style="color:#d0dde8; font-size:0.88em; line-height:1.9; margin-left:14px;">
                 <li>Likely ponytail — consistent with her usual look</li>
                 <li>Hair ornament/bowtie to match the Chinese outfit theme</li>
-                <li>Limited refs — your creative space, see section 10</li>
+                <li>Limited refs — your creative space, see section 9</li>
               </ul>
             </div>
 
@@ -158,7 +158,7 @@ const ViewModel = {
               <ul style="color:#d0dde8; font-size:0.88em; line-height:1.9; margin-left:14px;">
                 <li>Must be exposed — full open, cross-strap, or keyhole</li>
                 <li>Optional: split fabric tail panels from the waist</li>
-                <li>Back flaps your call — may fight the qipao read</li>
+                <li>Back flaps your call — may fight the qipao read, see section 8</li>
               </ul>
             </div>
 
@@ -238,6 +238,7 @@ const ViewModel = {
       content: `
         <p>Diamond or pointed-arch shaped opening, center chest. Hard clean edges — not a soft plunge.
            Exposes mid-chest and top of underboob. All edges trim-bordered. Should look designed, not absent.</p>
+        <p>Two narrow fabric bands flank the keyhole on either side, connecting the collar down to the lower bodice — the keyhole sits between them, not as a full plunge.</p>
 
         <h3>Key Refs:</h3>
         <ul>
@@ -258,7 +259,8 @@ const ViewModel = {
       images:  ["ai_gen_purple", "zzz_silhouette", "column_back"],
       content: `
         <p>Two high slits from hem to hip — the only leg reveal. Slit edges finished with trim piping.</p>
-        <p>Plus decorative rope/cord straps running vertically along the bodice sides between fabric panels.
+        <p>Plus decorative rope/cord straps running vertically along the bodice sides — think lace-up
+           detail visible on the flanks, between the front and back panels of the dress.
            Cord color at your inspiration — should complement the trim. Deliberate and decorative, not functional lacing.</p>
 
         <h3>Key Refs:</h3>
@@ -308,7 +310,7 @@ const ViewModel = {
       images:  ["ornate_sleeves", "ai_gen_red", "ai_gen_purple"],
       content: `
         <p>Tight-fitting ornate detached sleeves, upper arm to wrist. Hug the arm closely.</p>
-        <p><strong>Key detail:</strong> a deliberate geometric/diamond-shaped hole near the top of each sleeve
+        <p><strong>Key detail:</strong> a deliberate geometric/diamond-shaped decorative cutout near the top of each sleeve
            at the upper arm — bordered and clean, consistent with the diamond language of the outfit.</p>
 
         <div class="warning-box">
@@ -329,23 +331,28 @@ const ViewModel = {
     },
 
     // ══════════════════════════════════════════════════════
-    //  6. EMBROIDERY & FABRIC
+    //  6. SURFACE DETAILS — Embroidery, Trim & Tassels
     // ══════════════════════════════════════════════════════
     {
-      id:      "embroidery",
-      title:   "6 — Embroidery & Fabric",
-      images:  ["ornate_sleeves", "black_archive", "snowflake_close", "column_back"],
+      id:      "surface",
+      title:   "6 — Surface Details",
+      images:  ["ornate_sleeves", "black_archive", "snowflake_close", "column_back", "silver_tassels"],
       content: `
-        <p>Satin or silk finish base. Embroidery in cloud, dragon, or Chinese botanical motifs —
+        <p><strong>Fabric:</strong> Satin or silk finish. Embroidery in cloud, dragon, or Chinese botanical motifs —
            accent placement on hem panels and one side panel only. Not full coverage.
            The silhouette carries the design; embroidery is the accent.</p>
 
+        <p><strong>Trim &amp; Tassels:</strong> Decorative piping on every fabric edge — slits, hem, collar, cutout border.
+           Trim = contrasting fabric piping or metallic edging along seams and edges, consistent throughout.
+           One or two tassels at hip level. Keep it minimal.</p>
+
         <h3>Key Refs:</h3>
         <ul>
-          <li><span class="ref-tag">#10 Ornate Sleeves</span> — Embroidery-to-fabric ratio. Dragon motif on sleeve is a strong direction.</li>
+          <li><span class="ref-tag">#10 Ornate Sleeves</span> — Embroidery-to-fabric ratio. Dragon motif is a strong direction.</li>
           <li><span class="ref-tag">#4 Dragon Qipao</span> — Dragon motif on a full dress at body scale.</li>
           <li><span class="ref-tag">#11 Fabric Pattern</span> — Design idea only, not required. Shows motif density on tight satin.</li>
-          <li><span class="ref-tag">#3 Column Back</span> — How light pattern placement reads at full body scale.</li>
+          <li><span class="ref-tag">#3 Column Back</span> — How light pattern reads at full body scale.</li>
+          <li><span class="ref-tag">#9 Ornate Leggings</span> — Tassel placement and hang. Adapt to your chosen trim direction.</li>
         </ul>
       `
     },
@@ -359,7 +366,7 @@ const ViewModel = {
       images:  ["snowflake_close", "ai_gen_red", "black_archive"],
       content: `
         <p>High mandarin collar — stiff and standing, not folded.
-           3–5 Chinese frog knot closures running from collar down to just above the keyhole.</p>
+           2-3 Chinese frog knot closures running from collar down to just above the keyhole.</p>
 
         <div class="options">
           <h3>Collar Top Detail — Your Inspiration</h3>
@@ -378,29 +385,11 @@ const ViewModel = {
     },
 
     // ══════════════════════════════════════════════════════
-    //  8. TASSELS & TRIM
-    // ══════════════════════════════════════════════════════
-    {
-      id:      "tassels",
-      title:   "8 — Tassels & Trim",
-      images:  ["silver_tassels"],
-      content: `
-        <p>Decorative piping on every fabric edge — slits, hem, collar, cutout border — consistent throughout.
-           One or two tassels at hip level. Keep it minimal; the dress does the heavy lifting.</p>
-
-        <h3>Key Ref:</h3>
-        <ul>
-          <li><span class="ref-tag">#9 Ornate Leggings</span> — Tassel placement and hang. Adapt to your chosen trim direction.</li>
-        </ul>
-      `
-    },
-
-    // ══════════════════════════════════════════════════════
-    //  9. BACK DESIGN
+    //  8. BACK DESIGN
     // ══════════════════════════════════════════════════════
     {
       id:      "back",
-      title:   "9 — Back Design (Your Call)",
+      title:   "8 — Back Design (Your Call)",
       images:  ["open_back", "crossstrap_back", "back_column", "honoka"],
       content: `
         <p>The back must be exposed. Pick whichever option works with your composition.</p>
@@ -434,11 +423,11 @@ const ViewModel = {
     },
 
     // ══════════════════════════════════════════════════════
-    //  10. HAIR & PONYTAIL BOWTIE
+    //  9. HAIR & PONYTAIL BOWTIE
     // ══════════════════════════════════════════════════════
     {
       id:      "hair",
-      title:   "10 — Hair & Ponytail Bowtie",
+      title:   "9 — Hair & Ponytail Bowtie",
       images:  ["ai_gen_purple", "ornate_sleeves"],
       content: `
         <p>She likely keeps her ponytail. Add a Chinese-themed hair ornament or bowtie — something
